@@ -1,5 +1,6 @@
 package com.codepath.tumblrloginscreen;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
@@ -14,6 +15,26 @@ import android.widget.Toast;
  */
 
 public class LoginDialogFragment extends DialogFragment  {
+   public interface LoginDialogListener {
+       public void onLoginClick(DialogFragment dialog);
+   }
+
+    LoginDialogListener mListener;
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+
+        try {
+            mListener = (LoginDialogListener) activity;
+        }
+        catch (ClassCastException e) {
+            throw new ClassCastException(activity.toString() + " must implement NoticeDialogListener");
+        }
+
+
+    }
+
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         LayoutInflater layoutInflater = getActivity().getLayoutInflater();
@@ -28,6 +49,8 @@ public class LoginDialogFragment extends DialogFragment  {
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Logged in!",
                     Toast.LENGTH_LONG).show();
+                mListener.onLoginClick(LoginDialogFragment.this);
+
 
             }
         });

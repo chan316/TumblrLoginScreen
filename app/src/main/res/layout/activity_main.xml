@@ -11,94 +11,6 @@
 
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:background="#00D1DF"
-        android:layout_height="match_parent">
-        <TextView
-            android:text="Follow the world's creators"
-            android:paddingTop="7dp"
-            android:paddingBottom="7dp"
-            android:textColor="#FFFFFF"
-            android:textSize="22sp"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView"
-
-            />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-            <ImageView
-                xmlns:tools="http://schemas.android.com/tools"
-                tools:src="@mipmap/ic_launcher"
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_weight="0.3"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_weight="0.7">
-                <ImageView
-                    xmlns:tools="http://schemas.android.com/tools"
-                    tools:src="@mipmap/ic_launcher"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.5"/>
-                <ImageView
-                xmlns:tools="http://schemas.android.com/tools"
-                tools:src="@mipmap/ic_launcher"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"/>
-
-            </LinearLayout>
-
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_weight="0.7">
-                <ImageView
-                    xmlns:tools="http://schemas.android.com/tools"
-                    tools:src="@mipmap/ic_launcher"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.5"/>
-                <ImageView
-                    xmlns:tools="http://schemas.android.com/tools"
-                    tools:src="@mipmap/ic_launcher"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.5"/>
-
-            </LinearLayout>
-            <ImageView
-                xmlns:tools="http://schemas.android.com/tools"
-                tools:src="@mipmap/ic_launcher"
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_weight="0.3"/>
-
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -106,7 +18,8 @@
         android:layout_alignParentBottom="true"
         android:paddingTop="7dp"
         android:paddingBottom="7dp"
-        android:gravity="center">
+        android:gravity="center"
+        android:id="@+id/linearLayout">
         <Button
             android:id="@+id/btnLoginMain"
             android:layout_width="100dp"
@@ -123,5 +36,117 @@
             android:layout_marginLeft="7dp"
             android:text="Sign up"/>
         />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:text="Follow the world's creators"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
+            <ImageView
+                android:src="@drawable/biden3"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.3"/>
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.7">
+                <ImageView
+                    android:src="@drawable/biden2"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:layout_marginBottom="5dp"
+                    />
+                <ImageView
+                    android:src="@drawable/biden6"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.7">
+                <ImageView
+                    android:src="@drawable/biden1"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+                <ImageView
+                    android:src="@drawable/biden5"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+            <ImageView
+                android:src="@drawable/biden4"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_weight="0.3"/>
+
+
+        </LinearLayout>
+
     </LinearLayout>
 </RelativeLayout>

@@ -9,6 +9,13 @@
     android:background="#33465d"
     tools:context="com.codepath.tumblrloginscreen.MainActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:src="@drawable/tumblr_logo_cropped"
+        android:layout_alignParentTop="true"
+        android:background="#375068"
+        android:id="@+id/logo"/>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -35,7 +42,6 @@
             android:textColor="#FFF"
             android:layout_marginLeft="7dp"
             android:text="Sign up"/>
-        />
     </LinearLayout>
 
     <LinearLayout
@@ -44,9 +50,10 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/linearLayout"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_below="@id/logo">
+
         <TextView
-            android:text="Follow the world's creators"
+            android:text="Obama: Joe pls"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
             android:textColor="#FFFFFF"
@@ -54,9 +61,7 @@
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView"
-
-            />
+            android:id="@+id/textView" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -65,6 +70,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1">
+
             <ImageView
                 android:src="@drawable/biden3"
                 android:scaleType="centerCrop"
@@ -73,13 +79,14 @@
                 android:layout_height="250dp"
                 android:layout_marginRight="5dp"
                 android:layout_weight="0.3"/>
+
             <LinearLayout
                 android:layout_marginLeft="5dp"
-
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_weight="0.7">
+
                 <ImageView
                     android:src="@drawable/biden2"
                     android:scaleType="centerCrop"
@@ -87,8 +94,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
-                    android:layout_marginBottom="5dp"
-                    />
+                    android:layout_marginBottom="5dp" />
                 <ImageView
                     android:src="@drawable/biden6"
                     android:scaleType="centerCrop"
@@ -97,11 +103,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"/>
-
             </LinearLayout>
-
-
-
         </LinearLayout>
 
         <LinearLayout
@@ -134,8 +136,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"/>
-
             </LinearLayout>
+
             <ImageView
                 android:src="@drawable/biden4"
                 android:scaleType="centerCrop"
@@ -145,8 +147,6 @@
                 android:layout_height="250dp"
                 android:layout_weight="0.3"/>
 
-
         </LinearLayout>
-
     </LinearLayout>
 </RelativeLayout>

@@ -44,7 +44,7 @@ public class LoginDialogFragment extends DialogFragment  {
 
 
         Button btnLogin = (Button) loginView.findViewById(R.id.btnLogin);
-
+        btnLogin.setFocusable(false);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Logged in!",
